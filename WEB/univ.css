@@ -1,0 +1,27 @@
+ img{
+	width: 49vw;
+	position: relative;
+	height:400px;
+	margin-left: 2px;
+
+}
+.ms{
+	background-color: #f1f1f1;
+  padding: 50px 10px;
+  color: black;
+  text-align: center;
+  font-size: 90px; 
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: 0.2s;
+}
+.ms h1{
+	color: white;
+	font-size: 6rem;
+}
+.imagess{
+	margin-top: 200px;
+	padding:15px 15px 2500px;
+}

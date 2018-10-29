@@ -1,0 +1,41 @@
+ img{
+	width: 49.4vw;
+	position: relative;
+	height:400px;
+	margin-left: 2px;
+
+}
+.ms{
+	background-color: #12845d;
+  padding: 50px 10px;
+  color: black;
+  text-align: center;
+  font-size: 90px; 
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: 0.2s;
+  z-index: 1;
+}
+.mba{
+	background-color: #12845d;
+  padding: 50px 10px;
+  color: black;
+  text-align: center;
+  font-size: 90px; 
+  font-weight: bold;
+  position: relative;
+  top: 0;
+  width: 100%;
+  transition: 0.2s;
+  z-index: 1;
+}
+.ms h1{
+	color: white;
+	font-size: 6rem;
+}
+.imagess{
+	margin-top: 00px;
+	
+}

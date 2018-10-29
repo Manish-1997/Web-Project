@@ -1,0 +1,378 @@
+
+.ms{
+	background-color: #12845d;
+  font-family: 'Cookie';
+  padding: 50px 10px;
+  color: black;
+  text-align: center;
+  font-size: 90px; 
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  width: 99%;
+  transition: 0.2s;
+  z-index: 2;
+
+  background-image: linear-gradient(#12845d,lightgreen);
+  border-radius: 20px;
+  box-shadow: 0px 1px 4px -2px #333;
+text-shadow: 0px -1px #333;
+}
+.ms:after{
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: calc(100% - 4px);
+  height: 0%;
+  background: linear-gradient(#12845d, rgba(255,255,255,0.2));
+}
+.mba{
+	background-color: #de1c1c;
+  font-family: 'Cookie';
+  padding: 50px 10px;
+  color: black;
+  text-align: center;
+  font-size: 90px; 
+  font-weight: bold;
+  position: relative;
+  top: 0;
+  width: 100%;
+  transition: 0.2s;
+  z-index: 2;
+   background-image: linear-gradient(#de1c1c,#ef7777);
+  border-radius: 20px;
+  box-shadow: 0px 1px 4px -2px #333;
+text-shadow: 0px -1px #333;
+}
+.mba:after{
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: calc(100% - 4px);
+  height: 0%;
+  background: linear-gradient(#de1c1c, rgba(255,255,255,0.2));
+}
+.iit{
+  background-color: #e2cb02;
+  font-family: 'Cookie';
+  padding: 50px 10px;
+  color: black;
+  text-align: center;
+  font-size: 90px; 
+  font-weight: bold;
+  position: relative;
+  top: 0;
+  width: 99%;
+  transition: 0.2s;
+  z-index: 2;
+
+  background-image: linear-gradient(#e2cb02,#fbf3b2);
+  border-radius: 20px;
+  box-shadow: 0px 1px 4px -2px #333;
+text-shadow: 0px -1px #333;
+}
+.iit:after{
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: calc(100% - 4px);
+  height: 0%;
+  background: linear-gradient(#e2cb02, rgba(255,255,255,0.2));
+}
+.ms h1{
+	color: white;
+	font-size: 6rem;
+}
+.wrapper{
+  margin-top:200px;
+}
+.wrapper1{
+  margin-top: 2px;
+}
+.imagess{
+	
+  width: 49.4vw;
+  position: relative;
+  height:500px;
+  margin-left: 1px;
+  display: inline-block;
+  
+	
+}
+.imagess img{
+  width: 100%;
+  height: 100%;
+  transition: .3s;
+}
+.imageess{
+  margin-top: 20px;
+  width: 49.4vw;
+  position: relative;
+  height:500px;
+  margin-left: 2px;
+  
+}
+.imagess:hover img{
+  filter: blur(2px) brightness(60%);
+}
+.imagess h1{
+  position: absolute;
+  top: 20px;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  width: 100%;
+  opacity: 0;
+  transition: .3s;
+
+}
+.imagess:hover h1{
+  opacity: 1;
+}
+.op{
+  position: absolute;
+  top: 30%;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  width: 100%;
+  opacity: 0;
+  transition: .3s;
+}
+.imagess:hover .op{
+  opacity: 1;
+}
+.nameh{
+  font-size: 25px;
+  color: black;
+}
+.qwe{
+  position: relative;
+  top: -400px;
+}
+.ava{
+position: absolute;
+  top: 75px;
+  z-index: 1;
+  color: white;
+  text-align: left;
+  margin-left: 103px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 24px;
+  width: 100%;
+  opacity: 0;
+  transition: .3s;
+
+}
+.imagess:hover .ava{
+  opacity: 1;
+}
+.imagess .a0{
+  position: absolute;
+  top: 110px;
+  z-index: 1;
+  color: white;
+  text-align: left;
+  margin-left: 100px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 18px;
+  width: 100%;
+  opacity: 0;
+  transition: .3s;
+
+}
+.imagess:hover .a0{
+  opacity: 1;
+}
+.imagess .a1{
+  position: absolute;
+  top: 140px;
+  z-index: 1;
+  color: white;
+  text-align: left;
+  margin-left: 100px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 18px;
+  width: 100%;
+  opacity: 0;
+  transition: .3s;
+
+}
+.imagess:hover .a1{
+  opacity: 1;
+}
+.imagess .a2{
+  position: absolute;
+  top: 170px;
+  z-index: 1;
+  color: white;
+  text-align: left;
+  margin-left: 100px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 18px;
+  width: 100%;
+  opacity: 0;
+  transition: .3s;
+
+}
+.imagess:hover .a2{
+  opacity: 1;
+}
+.imagess .a3{
+  position: absolute;
+  margin-left: 100px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 18px;
+  top: 200px;
+  z-index: 1;
+  color: white;
+  text-align: left;
+  width: 100%;
+  opacity: 0;
+  transition: .3s;
+
+}
+.imagess:hover .a3{
+  opacity: 1;
+}
+.imagess .a4{
+  position: absolute;
+  top: 230px;
+  margin-left: 100px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 18px;
+  z-index: 1;
+  color: white;
+  text-align: left;
+  width: 100%;
+  opacity: 0;
+  transition: .3s;
+
+}
+.imagess:hover .a4{
+  opacity: 1;
+}
+.imagess .a5{
+  position: absolute;
+  margin-left: 100px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 18px;
+  top: 260px;
+  z-index: 1;
+  color: white;
+  text-align: left;
+  width: 100%;
+  opacity: 0;
+  transition: .3s;
+
+}
+.imagess:hover .a5{
+  opacity: 1;
+}
+.imagess .a6{
+  position: absolute;
+  margin-left: 100px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 18px;
+  top: 290px;
+  z-index: 1;
+  color: white;
+  text-align: left;
+  width: 100%;
+  opacity: 0;
+  transition: .3s;
+
+}
+.imagess:hover .a6{
+  opacity: 1;
+}
+.imagess .a7{
+  position: absolute;
+  margin-left: 100px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 18px;
+  top: 320px;
+  z-index: 1;
+  color: white;
+  text-align: left;
+  width: 100%;
+  opacity: 0;
+  transition: .3s;
+
+}
+.imagess:hover .a7{
+  opacity: 1;
+}
+.imagess .a8{
+  position: absolute;
+  margin-left: 100px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 18px;
+  top: 350px;
+  z-index: 1;
+  color: white;
+  text-align: left;
+  margin-left: 100px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 18px;
+
+  width: 100%;
+  opacity: 0;
+  transition: .3s;
+
+}
+.imagess:hover .a8{
+  opacity: 1;
+}
+.imagess .a9{
+  position: absolute;
+  margin-left: 100px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 18px;
+  top: 380px;
+  z-index: 1;
+  color: white;
+  text-align: left;
+  width: 100%;
+  opacity: 0;
+  transition: .3s;
+
+}
+.imagess:hover .a9{
+  opacity: 1;
+}
+.imagess .a10{
+  position: absolute;
+  margin-left: 100px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 18px;
+  top: 410px;
+  z-index: 1;
+  color: white;
+  text-align: left;
+  width: 100%;
+  opacity: 0;
+  transition: .3s;
+
+}
+.imagess:hover .a10{
+  opacity: 1;
+}
+.aaa{
+  font-size: 45px;
+  font-family: 'Baloo Bhaijaan', cursive;
+}
+.coun{
+  margin-top: 75px;
+  font-family: 'Baloo Bhaijaan', cursive;
+  margin-left: 300px;
+  text-align: left;
+  font-size: 20px;
+}
+
+
+
+
