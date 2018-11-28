@@ -11,7 +11,7 @@
 		<link rel="shortcut icon" href="../favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/component1.css" />
 		<link rel="stylesheet" type="text/css" href="css/cs-select.css" />
 		<link rel="stylesheet" type="text/css" href="css/cs-skin-boxes.css" />
 		<script src="js/modernizr.custom.js"></script>
@@ -23,14 +23,8 @@
 				<div class="fs-title">
 					<h1>Stuff about the student</h1>
 				</div>
-				<form id="myform" class="fs-form fs-form-full" autocomplete="off" enctype="multipart/form-data">
+				<form id="myform" class="fs-form fs-form-full" autocomplete="off" enctype="multipart/form-data" method="POST" action=''>
 					<ol class="fs-fields">
-						<li>
-							<label class="fs-field-label fs-anim-upper" for="q1" data-info="Phone and Email will only be visible to admins">Personal details</label>
-							<input class="fs-anim-lower" id="q1" name="name" type="text" placeholder="Name" required/>
-							<input class="fs-anim-lower" id="q1a" name="email" type="email" placeholder="Email-Id"/>
-							<input class="fs-anim-lower" id="q1b" name="phone" type="text" placeholder="Phone Number"/>
-						</li>
 						<li>
 							<label class="fs-field-label fs-anim-upper" for="q2" data-info="The University the student is pursuing Higher studies in">University Details</label>
 							<input class="fs-anim-lower" id="q2" name="uni" type="text" placeholder="University/Institution" required/>
@@ -54,7 +48,7 @@
 							
 						</li>
 					</ol><!-- /fs-fields -->
-					<button class="fs-submit" type="submit">Upload Data</button>
+					<button class="fs-submit" type="submit" name="submit">Upload Data</button>
 				</form><!-- /fs-form -->
 			</div><!-- /fs-form-wrap -->
 
@@ -65,7 +59,6 @@
 		<script>
 			(function() {
 				var formWrap = document.getElementById( 'fs-form-wrap' );
-
 				[].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {	
 					new SelectFx( el, {
 						stickyPlaceholder: false,
@@ -74,7 +67,6 @@
 						}
 					});
 				} );
-
 				new FForm( formWrap, {
 					onReview : function() {
 						classie.add( document.body, 'overview' ); // for demo purposes only
@@ -82,31 +74,35 @@
 				} );
 			})();
 		</script>
-	</body>
-</html>
-
-<?php
+		<?php
+		session_start();
 include "common.php";
 
-if(isset($_POST['sumbit'])){
-	$name=$_POST['name'];
-	$email=$_POST['email'];
-	$phone=$_POST['phone'];
+if(isset($_POST['submit'])){
+
+	
 	$uni=$_POST['uni'];
 	$course=$_POST['course'];
 	$major=$_POST['major'];
 	$branch=$_POST['branch'];
-	$cgpa=$_POST['cgpa'];
+	$cgpa=$_POST['CGPA'];
 	$year=$_POST['year'];
 	$gpa=$_POST['gpa'];
 	$entrance=$_POST['entrance'];
 	$score=$_POST['score'];
+	$p=$_SESSION['student'];
+	$tmpname=addslashes(file_get_contents($_FILES['photo']['tmp_name']));
+	
 
-	$comeon="INSERT into web.students values (NULL,'$name','$email','$phone','$uni','$year','$course','$major',NULL";
-
-	mysqli_query($comeon);
+	$comeon1="UPDATE student set universities='".$uni."',year='".$year."',course='".$course."',specialisation='".$major."' where student_id='".$p."'";
+	$comeon="UPDATE student set image='".$tmpname."' where name='p'";
+	mysqli_query($conn,$comeon1);
+	mysqli_query($conn,$comeon);
+	header("location:/web/universities.php");
 	echo "ASDF";
 	$conn->close();
-
 }
 ?>
+	</body>
+</html>
+

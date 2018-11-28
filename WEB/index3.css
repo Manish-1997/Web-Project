@@ -166,8 +166,8 @@
   color: black;
   font-family: "Cookie";
   padding: 20px;
-  margin: 10px;
-  margin-left: 20px;
+  margin: 0px;
+  margin-left: 10px;
   z-index: 1;
   opacity: 1;
   transform: rotate(45deg)translateY(15px);
